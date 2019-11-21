@@ -36,14 +36,13 @@ program
 program
   .command('create <app-name>')
   .description('create a new project')
-  .option('-p, --preset <presetName>', 'Skip prompts and use saved or remote preset')
-  .option('-d, --default', 'Skip prompts and use default preset')
+  // .option('-p, --preset <presetName>', 'Skip prompts and use saved or remote preset')
+  // .option('-d, --default', 'Skip prompts and use default preset')
   .action((name, cmd) => {
     const options = cleanArgs(cmd)
     if (minimist(process.argv.slice(3))._.length > 1) {
       console.log(chalk.yellow('\n Info: You provided more than one argument. The first one will be used as the app\'s name, the rest are ignored.'));
     }
-    console.log(name, options, process.cwd());
     require('../lib/create')(name, options)
   })
 
