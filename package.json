@@ -31,7 +31,7 @@
     "import-global": "^0.1.0",
     "inquirer": "^6.5.1",
     "lru-cache": "^5.1.1",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "nunjucks": "^3.2.0",
     "ora": "^3.4.0",
     "request-promise-native": "^1.0.7",
